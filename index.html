@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Page for qwerty school</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCzs84miWvdZuNKFLe_RYDz6T21F5avCkc",
+        // authDomain: "qwertytask3.firebaseapp.com",
+        databaseURL: "https://qwertytask3.firebaseio.com",
+        projectId: "qwertytask3",
+        storageBucket: "",
+        messagingSenderId: "877734496828"
+    };
+    firebase.initializeApp(config);
+    </script>
+</head>
+
+<body>
+    <!-- Wrapper -->
+    <div class="wrapper" id="wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h2><a href="#">Code school</a></h2>
+            <nav class="links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" id="signOut">SignOut</a></li>
+                </ul>
+            </nav>
+            <nav class="main">
+                <ul>
+                    <li class="login">
+                        <a id="toggleModal" href="#login" class="js-button-campaign button-modal fa-sign-in">Login</a>
+                    </li>
+                    <li class="menu">
+                        <a class="fa-bars" href="#menu">Menu</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Menu -->
+        <section id="menu">
+            <!-- Links -->
+            <section>
+                <ul class="links">
+                    <li>
+                        <a href="#">
+                            <h3>Home</h3>
+                            <p>Content area for text</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>About</h3>
+                            <p>Content area for text</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>Education</h3>
+                            <p>Content area for text</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>Development</h3>
+                            <p>Content area for text</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>Contact</h3>
+                            <p>Content area for text</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- Actions -->
+            <section>
+                <ul class="actions vertical">
+                    <li><a href="#login" class="button js-button-campaign button-modal big fit">Log In</a></li>
+                </ul>
+            </section>
+        </section>
+        <!-- Main -->
+        <div id="main">
+            <!-- Post -->
+            <article class="post">
+                <section>
+                    <h4>Left &amp; Right</h4>
+                    <p class="content-block"><span class="image left"><img src="images/pic07.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+                    <p class="content-block">Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+                    <p class="content-block">Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+                </section>
+            </article>
+        </div>
+        <!-- Sidebar -->
+        <section id="sidebar">
+            <div id="clickbtn" onclick="toggleside(this)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="burgerwrap">
+                <!-- Intro -->
+                <section id="intro">
+                    <a href="#" class="logo"><img src="images/orchestrate.gif" alt="" /></a>
+                    <header>
+                        <h2>Responsive page</h2>
+                        <p>for qwerty school</p>
+                    </header>
+                </section>
+                <section>
+                    <h3>Settings panel</h3>
+                    <form action="#">
+                        <div class="row uniform">
+                            <div class="12u$">
+                                <input style="color:black" pattern="\d [0-9]" type="number" required name="font-size" id="font-size" onkeyup="changeFontsize(this.value)" placeholder="Choose font size <p> 8px to 24px" />
+                            </div>
+                            <div class="12u$">
+                                Select your favorite color, click on red area:
+                                <input type="color" name="favcolor" id="demo-color" value="#ff0000" placeholder="Click for change" />
+                            </div>
+                            <div class="12u$"></div>
+                            <div class="12u$"></div>
+                            <div class="4u 12u$(small)">
+                                <h3 class="fontHelvetica ">Font Helvetica</h3>
+                                <input type="radio" id="Helvetica" name="demo-priority" onclick="changeFont(this)">
+                                <label for="Helvetica">Second</label>
+                            </div>
+                            <div class="4u 12u$(small)">
+                                <h3 class="fontRaleway">Font Raleway</h3>
+                                <input type="radio" id="Raleway" name="demo-priority" onclick="changeFont(this)" checked>
+                                <label for="Raleway">General </label>
+                            </div>
+                            <div class="4u$ 12u$(small)">
+                                <h3 class="fontsans-serif">Font sans-serif</h3>
+                                <input type="radio" id="'sans-serif'" name="demo-priority" onclick="changeFont(this)">
+                                <label for="'sans-serif'">Root</label>
+                            </div>
+                            <div class="12u$"></div>
+                            <div class="12u$"></div>
+                            <div class="12u$">
+                                <ul class="actions fit small">
+                                    <input type="button" value="Remove last p" onclick="remove_lastp()" />
+                                </ul>
+                            </div>
+                            <div class="12u$"></div>
+                            <div class="12u$"></div>
+                        </div>
+                    </form>
+                </section>
+                <!-- About -->
+                <section class="blurb">
+                    <h2>About</h2>
+                    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod amet placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button">Learn More</a></li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+    </div>
+    <!-- Footer -->
+    <section class="footer" id="footer">
+        <p class="copyright">&copy; Licensed rights reserved. Page for qwerty school</p>
+        <ul class="icons">
+            <li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
+            <li><a href="#" class="button js-button-welcome button-modal big fit">click me</a></li>
+        </ul>
+    </section>
+    <!-- modal window -->
+    <div id="overlay" class="overlay js-overlay-campaign">
+        <div class="popup js-popup-campaign">
+            <div class="form">
+                <div class="close-popup js-close-campaign"></div>
+                <ul class="tab-group">
+                    <li class="tab active"><a href="#signup">Sign Up</a></li>
+                    <li class="tab"><a href="#login">Log In</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="signup">
+                        <h2>Sign Up for Free</h2>
+                        <form action="/" method="post">
+                            <div class="field-wrap">
+                                <label>
+                                    Email Address<span class="req">*</span>
+                                </label>
+                                <input id="register_login" type="email" required autocomplete="off" />
+                            </div>
+                            <div class="field-wrap">
+                                <label>
+                                    Set A Password<span class="req">*</span>
+                                </label>
+                                <input id="register_password" type="password" required autocomplete="off" />
+                            </div>
+                            <div class="field-wrap">
+                                <label>
+                                    Confirma A Password<span class="req">*</span>
+                                </label>
+                                <input id="register_confirmation" type="password" required autocomplete="off" />
+                            </div>
+                            <button id="register" type="submit" class="form-button button-block" />Get Registered</button>
+                        </form>
+                    </div>
+                    <div id="login">
+                        <h2>Welcome Back!</h2>
+                        <form action="/" method="post">
+                            <div class="field-wrap">
+                                <label>
+                                    Email Address<span class="req">*</span>
+                                </label>
+                                <input id="auth_login" type="email" required autocomplete="off" />
+                            </div>
+                            <div class="field-wrap">
+                                <label>
+                                    Password<span class="req">*</span>
+                                </label>
+                                <input id="auth_password" type="password" required autocomplete="off" />
+                            </div>
+                            <!--  <p class="forgot"><a href="#">Forgot Password?</a></p> -->
+                            <button id="auth" class="form-button button-block" />Log In</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- tab-content -->
+            </div>
+            <!-- /form -->
+        </div>
+    </div>
+    <!-- modal welcome window -->
+    <div id="welcome" class="overlay js-overlay-welcome">
+        <div class="popup js-popup-welcome">
+            <div class="form">
+                <div class="close-popup js-close-welcome"></div>
+                <div class="welcome-content">
+                    <div id="signup">
+                        <h3>Welcome dear,</h3>
+                        <p>Your email:<span id="user"></span>!</p>
+                        <p>Your uid: <span id="uid"></span>!</p>
+                        <p>Total users: <span id="total_users"></span>!</p>
+                    </div>
+                </div>
+                <!-- tab-content -->
+            </div>
+            <!-- /form -->
+        </div>
+    </div>
+    <!-- /end welcome window -->
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
